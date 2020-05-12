@@ -9,4 +9,7 @@ when you start of you would have 4 folders one portable folder 3 platform depend
 #### 6.Then set android ios or uwp project as startup project and debug the project.
 #### 7.Enjoy
 # ScreenShots
+## First Page
 ![image](https://github.com/Pai026/weatherapp-xamarin/blob/master/WhatsApp%20Image%202020-05-10%20at%207.37.20%20PM.jpeg)
+## Landing Page
+![image](https://github.com/Pai026/weatherapp-xamarin/blob/master/WhatsApp%20Image%202020-05-10%20at%207.37.26%20PM.jpeg)
