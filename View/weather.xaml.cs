@@ -19,8 +19,8 @@ namespace weatherapp.View
 		}
         void Init()
         {
-            BackgroundColor = Constants.BackgroundColor;
-            label_Location.TextColor = Constants.MainTextColor;
+           // BackgroundColor = Constants.BackgroundColor;
+           // label_Location.TextColor = Constants.MainTextColor;
             entry_Name.Completed += (s, e) => GetWeather_Clicked(s, e);
         }
 
@@ -31,13 +31,14 @@ namespace weatherapp.View
             if (result != null)
             {
                 Console.WriteLine(result.WeatherElement[0].Icon);
-                Icon.IsVisible = true;
-                Icon.Source = string.Format(Constants.Imgurl,result.WeatherElement[0].Icon);
-                await DisplayAlert("Weather", "Temperature" + ":" + result.Main.Temp + "°C" + "\n" + "humidity" + ":" + result.Main.Humidity+"%", "Ok");
+             //   await DisplayAlert("Weather", "Temperature" + ":" + result.Main.Temp + "°C" + "\n" + "humidity" + ":" + result.Main.Humidity+"%", "Ok");
+                await Navigation.PushAsync(new NavigationPage( new landingpage1(location)));
             }
             else {
                 await DisplayAlert("Weather", "Location Not Available", "Ok");
             }
         }
+
+       
     }
 }
